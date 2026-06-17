@@ -37,8 +37,5 @@ jobs:
         with:
           files: build/app/outputs/flutter-apk/app-release.apk
         env:
-<<<<<<< HEAD
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
-=======
           GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
->>>>>>> 30a0c9eaff563fa94bff9c4336ad9c80ea53c014
