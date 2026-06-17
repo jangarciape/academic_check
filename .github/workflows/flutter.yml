@@ -38,4 +38,8 @@ jobs:
           files: build/app/outputs/flutter-apk/app-release.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
+<<<<<<< HEAD:.github/workflows/flluterr.yml
           GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
+=======
+
+>>>>>>> e845b5cfc67c3f364b24b37a906dec6cde19cdfb:.github/workflows/flutter.yml
