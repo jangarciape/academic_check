@@ -22,20 +22,20 @@ jobs:
           flutter-version: '3.32.6'
 
       - name: Obtener dependencias
-        working-directory: academic_check
+        working-directory: academic_check/academic_check
         run: flutter pub get
 
       - name: Ejecutar pruebas
-        working-directory: academic_check
+        working-directory: academic_check/academic_check
         run: flutter test
 
       - name: Generar APK Release
-        working-directory: academic_check
+        working-directory: academic_check/academic_check
         run: flutter build apk --release
 
       - name: Crear Release GitHub
         uses: softprops/action-gh-release@v2
         with:
-          files: academic_check/build/app/outputs/flutter-apk/app-release.apk
+          files: academic_check/academic_check/build/app/outputs/flutter-apk/app-release.apk
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
